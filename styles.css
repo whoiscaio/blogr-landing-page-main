@@ -7,14 +7,30 @@
   font-family: "Ubuntu", sans-serif;
   font-size: 62.5%;
 }
+@media (max-width: 1400px) {
+  :root {
+    font-size: 55%;
+  }
+}
+@media (max-width: 800px) {
+  :root {
+    font-size: 50%;
+  }
+}
 
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: "Overpass", sans-serif;
 }
 
@@ -46,13 +62,14 @@ header .bg-wrapper {
   width: 100%;
   height: 100%;
   border-bottom-left-radius: 10rem;
-  background: url("../images/bg-pattern-intro.svg") center;
+  background: url("../images/bg-pattern-intro.svg") 30% 50%;
   padding-top: 6rem;
 }
 header .bg-wrapper .upper-part {
   max-width: 1440px;
   margin: 0 auto;
   display: flex;
+  padding: 0 2rem;
 }
 header .bg-wrapper .upper-part .logo {
   padding-right: 10rem;
@@ -63,32 +80,76 @@ header .bg-wrapper .upper-part .menu {
   justify-content: space-between;
   align-items: center;
 }
-header .bg-wrapper .upper-part .menu .navigation ul {
+header .bg-wrapper .upper-part .menu .navigation > ul {
   list-style-type: none;
   display: flex;
 }
-header .bg-wrapper .upper-part .menu .navigation ul li {
+header .bg-wrapper .upper-part .menu .navigation > ul > li {
+  color: #ffffff;
+  position: relative;
+}
+header .bg-wrapper .upper-part .menu .navigation > ul > li > a {
   color: #ffffff;
   opacity: 0.7;
+  padding: 1rem;
   font-size: 1.6rem;
   font-weight: 500;
   margin-right: 5rem;
+  text-decoration: none;
 }
-header .bg-wrapper .upper-part .menu .navigation ul li ul {
-  display: none;
+header .bg-wrapper .upper-part .menu .navigation > ul > li > a::after {
+  content: "";
+  background: url("../images/icon-arrow-light.svg") center no-repeat;
+  margin-left: 0.5rem;
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  transition: 0.3s;
 }
-header .bg-wrapper .upper-part .menu .navigation ul li:hover {
+header .bg-wrapper .upper-part .menu .navigation > ul > li .menu-dropdown {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  color: #000;
+  background-color: #ffffff;
+  transition: 0.3s;
+  height: 0;
+  width: 100%;
+  position: absolute;
+  top: 2.7rem;
+  left: 0;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+header .bg-wrapper .upper-part .menu .navigation > ul > li .menu-dropdown ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  padding: 1rem;
+}
+header .bg-wrapper .upper-part .menu .navigation > ul > li .menu-dropdown ul a {
+  color: #333;
+  font-size: clamp(16px, 1.5vw, 1.8rem);
+  text-decoration: none;
+}
+header .bg-wrapper .upper-part .menu .navigation > ul > li:hover {
   cursor: pointer;
   text-decoration: underline;
   text-decoration-thickness: 2px;
   opacity: 1;
 }
-header .bg-wrapper .upper-part .menu .navigation ul li::after {
-  content: "";
-  background: url("../images/icon-arrow-light.svg") center no-repeat;
-  display: inline-block;
-  height: 1rem;
-  width: 1rem;
+header .bg-wrapper .upper-part .menu .navigation > ul > li:hover .dropdown-one {
+  height: 13rem;
+}
+header .bg-wrapper .upper-part .menu .navigation > ul > li:hover .dropdown-two {
+  height: 11rem;
+}
+header .bg-wrapper .upper-part .menu .navigation > ul > li:hover .dropdown-three {
+  height: 9rem;
+}
+header .bg-wrapper .upper-part .menu .navigation > ul > li:hover a::after {
+  transform: rotate(180deg);
 }
 header .bg-wrapper .upper-part .menu .menu-buttons button:nth-child(1) {
   opacity: 0.7;
