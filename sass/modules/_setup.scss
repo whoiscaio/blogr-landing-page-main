@@ -1,0 +1,74 @@
+/* Primary Colors */
+
+$light-red: #ff525d; // CTA Text
+$very-light-red: #ff7a85; // CTA Hover Background
+$very-dark-blue: #1f3f5b; // Headings
+
+/* Neutral */
+
+$white: #ffffff;
+$grayish-blue: #c8c8cb; // Footer Text
+$very-dark-grayish-blue: #4b5862; // Body Copy
+$very-dark-black-blue: #25252d; // Footer Background
+
+/* Header Gradient */
+
+$header-very-light-red: #ff8f70;
+$header-light-red: #ff3d54;
+
+/* Body Gradient */
+
+$very-dark-gray-blue: #2c2d3f;
+$very-dark-desaturated-blue: #3f4164;
+
+/* Setup */
+
+:root {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 62.5%;
+
+  @media (max-width: 1400px) {
+    font-size: 55%;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 50%;
+  }
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Overpass', sans-serif;
+}
+
+button {
+  color: $white;
+  border: 0;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: transparent;
+}
+
+.button-cta {
+  color: $light-red;
+  background: $white;
+  margin: 0 1rem;
+
+  &:hover {
+    color: $white;
+    background: $very-light-red;
+  }
+}
