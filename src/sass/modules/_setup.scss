@@ -1,5 +1,3 @@
-
-
 $light-red: #ff525d; // CTA Text
 $very-light-red: #ff7a85; // CTA Hover Background
 $very-dark-blue: #1f3f5b; // Headings
@@ -62,7 +60,7 @@ button {
   font-weight: bold;
   background: transparent;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
   transition-property: color, background;
 }
 
@@ -75,4 +73,8 @@ button {
     color: $white;
     background: $very-light-red;
   }
+}
+
+main {
+  height: 500rem;
 }

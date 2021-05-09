@@ -1,0 +1,35 @@
+@keyframes menuout {
+  from {
+    margin-top: 0;
+    opacity: 1;
+  }
+
+  to {
+    margin-top: -100px;
+    opacity: 0;
+  }
+}
+
+@keyframes menuin {
+  from {
+    margin-top: -100px;
+    opacity: 0;
+  }
+
+  to {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+
+.animationin {
+  animation-name: menuin;
+  animation-duration: .3s;
+  animation-fill-mode: backwards;
+}
+
+.animationout {
+  animation-name: menuout;
+  animation-duration: .3s;
+  animation-fill-mode: backwards;
+}

@@ -56,6 +56,10 @@ button {
   background: #ff7a85;
 }
 
+main {
+  height: 500rem;
+}
+
 header {
   background: linear-gradient(to right, #ff8f70, #ff3d54);
   border-bottom-left-radius: 15rem;
@@ -99,6 +103,7 @@ header .bg-wrapper .upper-part .menu .navigation > ul > li > a {
   margin-right: 5rem;
   text-decoration: none;
   transition: opacity 0.3s;
+  position: relative;
 }
 header .bg-wrapper .upper-part .menu .navigation > ul > li > a::after {
   content: "";
@@ -108,6 +113,9 @@ header .bg-wrapper .upper-part .menu .navigation > ul > li > a::after {
   height: 1rem;
   width: 1rem;
   transition: 0.3s;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-40%);
 }
 header .bg-wrapper .upper-part .menu .navigation > ul > li .menu-dropdown {
   display: flex;
@@ -158,8 +166,8 @@ header .bg-wrapper .upper-part .menu .navigation > ul > li:hover > a {
   text-decoration-thickness: 2px;
   opacity: 1;
 }
-header .bg-wrapper .upper-part .menu .navigation > ul > li:hover a::after {
-  transform: rotate(180deg);
+header .bg-wrapper .upper-part .menu .navigation > ul > li:hover > a::after {
+  transform: rotate(180deg) translateY(50%);
 }
 header .bg-wrapper .upper-part .menu .menu-buttons button:nth-child(1) {
   opacity: 0.7;
@@ -174,7 +182,7 @@ header .bg-wrapper .upper-part .mobile-menu-icon {
 @media (max-width: 800px) {
   header .bg-wrapper .upper-part .menu {
     width: min(500px, 90%);
-    display: flex;
+    display: none;
     flex-direction: column;
     align-content: stretch;
     position: absolute;
@@ -190,10 +198,10 @@ header .bg-wrapper .upper-part .mobile-menu-icon {
   }
   header .bg-wrapper .upper-part .menu .navigation > ul {
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
+    min-height: 28rem;
   }
   header .bg-wrapper .upper-part .menu .navigation > ul > li {
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -203,9 +211,13 @@ header .bg-wrapper .upper-part .mobile-menu-icon {
     opacity: 1;
     color: #2c2d3f;
     margin: 0;
+    font-size: clamp(2rem, 2.5vw, 4rem);
   }
   header .bg-wrapper .upper-part .menu .navigation > ul > li > a::after {
     background: url("../assets/icon-arrow-dark.svg") center no-repeat;
+    background-size: 100%;
+    width: 1.4rem;
+    height: 1.4rem;
   }
   header .bg-wrapper .upper-part .menu .navigation > ul > li .menu-dropdown {
     width: 90%;
@@ -233,12 +245,24 @@ header .bg-wrapper .upper-part .mobile-menu-icon {
     height: 15rem;
   }
   header .bg-wrapper .upper-part .menu .menu-buttons {
+    width: 90%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    border-top: 1px solid #0002;
+    padding: 2rem 0;
   }
   header .bg-wrapper .upper-part .menu .menu-buttons button:nth-child(1) {
     opacity: 1;
     color: #2c2d3f;
+  }
+  header .bg-wrapper .upper-part .menu .menu-buttons button:nth-child(2) {
+    margin-top: 2rem;
+    background: linear-gradient(to right, #ff8f70, #ff3d54);
+    color: #ffffff;
+  }
+  header .bg-wrapper .upper-part .menu .menu-buttons button {
+    font-size: 2rem;
   }
   header .bg-wrapper .upper-part .mobile-menu-icon {
     display: flex;
@@ -267,6 +291,45 @@ header .bg-wrapper .title .title-buttons button:nth-child(2) {
 header .bg-wrapper .title .title-buttons button:nth-child(2):hover {
   background: #ffffff;
   color: #ff525d;
+}
+
+.menuActive {
+  overflow: hidden;
+}
+.menuActive header .bg-wrapper .upper-part .menu {
+  display: flex;
+}
+
+@keyframes menuout {
+  from {
+    margin-top: 0;
+    opacity: 1;
+  }
+  to {
+    margin-top: -100px;
+    opacity: 0;
+  }
+}
+@keyframes menuin {
+  from {
+    margin-top: -100px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+.animationin {
+  animation-name: menuin;
+  animation-duration: 0.3s;
+  animation-fill-mode: backwards;
+}
+
+.animationout {
+  animation-name: menuout;
+  animation-duration: 0.3s;
+  animation-fill-mode: backwards;
 }
 
 /*# sourceMappingURL=styles.css.map */
