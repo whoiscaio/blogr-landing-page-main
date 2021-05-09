@@ -4,23 +4,24 @@ header {
     $header-very-light-red,
     $header-light-red
   );
-  border-bottom-left-radius: 10rem;
+  border-bottom-left-radius: 15rem;
 
   .bg-wrapper {
     width: 100%;
     height: 100%;
-    border-bottom-left-radius: 10rem;
-    background: url('../images/bg-pattern-intro.svg') 30% 50%;
+    border-bottom-left-radius: 15rem;
+    background: url('../assets/bg-pattern-intro.svg') 30% 50%;
     padding-top: 6rem;
 
     .upper-part {
       max-width: 1440px;
       margin: 0 auto;
       display: flex;
-      padding: 0 2rem;
+      justify-content: space-between;
+      padding: 0 3rem;
 
       .logo {
-        padding-right: 10rem;
+        padding-right: clamp(6rem, 7vw, 10rem);
       }
 
       .menu {
@@ -35,7 +36,6 @@ header {
             display: flex;
 
             & > li {
-              color: $white;
               position: relative;
 
               & > a {
@@ -46,10 +46,11 @@ header {
                 font-weight: 500;
                 margin-right: 5rem;
                 text-decoration: none;
+                transition: opacity 0.3s;
 
                 &::after {
                   content: '';
-                  background: url('../images/icon-arrow-light.svg') center
+                  background: url('../assets/icon-arrow-light.svg') center
                     no-repeat;
                   margin-left: 0.5rem;
                   display: inline-block;
@@ -60,13 +61,12 @@ header {
               }
 
               .menu-dropdown {
-
                 display: flex;
                 flex-direction: column;
                 list-style: none;
-                color: #000;
+                color: $black;
                 background-color: $white;
-                transition: .3s;
+                transition: height 0.3s;
 
                 height: 0;
                 width: 100%;
@@ -85,29 +85,38 @@ header {
                   padding: 1rem;
 
                   a {
-                    color: #333;
+                    color: #000a;
                     font-size: clamp(16px, 1.5vw, 1.8rem);
                     text-decoration: none;
+                    transition: color 0.2s;
+
+                    &:hover {
+                      color: $black;
+                    }
                   }
                 }
               }
 
               &:hover {
                 cursor: pointer;
-                text-decoration: underline;
-                text-decoration-thickness: 2px;
                 opacity: 1;
 
                 .dropdown-one {
                   height: 13rem;
                 }
-  
+
                 .dropdown-two {
                   height: 11rem;
                 }
-  
+
                 .dropdown-three {
                   height: 9rem;
+                }
+
+                > a {
+                  text-decoration: underline;
+                  text-decoration-thickness: 2px;
+                  opacity: 1;
                 }
 
                 a::after {
@@ -131,6 +140,106 @@ header {
 
       .mobile-menu-icon {
         display: none;
+        cursor: pointer;
+      }
+
+      @media (max-width: 800px) {
+        .menu {
+          width: min(500px, 90%);
+
+          display: flex;
+          flex-direction: column;
+          align-content: stretch;
+
+          position: absolute;
+          top: 12rem;
+          left: 50%;
+          transform: translateX(-50%);
+
+          background: $white;
+          z-index: 1;
+
+          border-radius: 1.6rem;
+
+          .navigation {
+            width: 100%;
+
+            & > ul {
+              flex-direction: column;
+              justify-content: center;
+
+              & > li {
+                width: 100%;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                & > a {
+                  opacity: 1;
+                  color: $very-dark-gray-blue;
+                  margin: 0;
+
+                  &::after {
+                    background: url('../assets/icon-arrow-dark.svg') center
+                      no-repeat;
+                  }
+                }
+
+                .menu-dropdown {
+                  width: 90%;
+                  background: #0002;
+                  border-radius: 0.6rem;
+                  z-index: 200;
+
+                  position: initial;
+
+                  ul {
+                    align-items: center;
+
+                    li {
+                      padding: 1rem;
+                    }
+                  }
+                }
+
+                &:hover {
+                  a {
+                    text-decoration: none;
+                  }
+
+                  .dropdown-one {
+                    height: 24rem;
+                  }
+
+                  .dropdown-two {
+                    height: 20rem;
+                  }
+
+                  .dropdown-three {
+                    height: 15rem;
+                  }
+                }
+              }
+            }
+          }
+
+          .menu-buttons {
+            display: flex;
+            flex-direction: column;
+
+            button:nth-child(1) {
+              opacity: 1;
+              color: $very-dark-gray-blue;
+            }
+          }
+        }
+
+        .mobile-menu-icon {
+          display: flex;
+          align-items: center;
+        }
       }
     }
 
@@ -139,7 +248,7 @@ header {
       max-width: 1440px;
       text-align: center;
       margin: 0 auto;
-      padding: 20rem 0;
+      padding: 20rem 3rem;
       font-size: 3rem;
 
       h5 {

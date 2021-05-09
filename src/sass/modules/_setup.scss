@@ -1,4 +1,4 @@
-/* Primary Colors */
+
 
 $light-red: #ff525d; // CTA Text
 $very-light-red: #ff7a85; // CTA Hover Background
@@ -7,6 +7,7 @@ $very-dark-blue: #1f3f5b; // Headings
 /* Neutral */
 
 $white: #ffffff;
+$black: #000000;
 $grayish-blue: #c8c8cb; // Footer Text
 $very-dark-grayish-blue: #4b5862; // Body Copy
 $very-dark-black-blue: #25252d; // Footer Background
@@ -60,6 +61,9 @@ button {
   font-size: 1.5rem;
   font-weight: bold;
   background: transparent;
+  cursor: pointer;
+  transition: .3s;
+  transition-property: color, background;
 }
 
 .button-cta {

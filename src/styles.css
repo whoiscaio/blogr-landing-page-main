@@ -1,4 +1,3 @@
-/* Primary Colors */
 /* Neutral */
 /* Header Gradient */
 /* Body Gradient */
@@ -42,6 +41,9 @@ button {
   font-size: 1.5rem;
   font-weight: bold;
   background: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+  transition-property: color, background;
 }
 
 .button-cta {
@@ -56,13 +58,13 @@ button {
 
 header {
   background: linear-gradient(to right, #ff8f70, #ff3d54);
-  border-bottom-left-radius: 10rem;
+  border-bottom-left-radius: 15rem;
 }
 header .bg-wrapper {
   width: 100%;
   height: 100%;
-  border-bottom-left-radius: 10rem;
-  background: url("../images/bg-pattern-intro.svg") 30% 50%;
+  border-bottom-left-radius: 15rem;
+  background: url("../assets/bg-pattern-intro.svg") 30% 50%;
   padding-top: 6rem;
 }
 header .bg-wrapper .upper-part {
@@ -96,10 +98,11 @@ header .bg-wrapper .upper-part .menu .navigation > ul > li > a {
   font-weight: 500;
   margin-right: 5rem;
   text-decoration: none;
+  transition: opacity 0.3s;
 }
 header .bg-wrapper .upper-part .menu .navigation > ul > li > a::after {
   content: "";
-  background: url("../images/icon-arrow-light.svg") center no-repeat;
+  background: url("../assets/icon-arrow-light.svg") center no-repeat;
   margin-left: 0.5rem;
   display: inline-block;
   height: 1rem;
@@ -112,7 +115,7 @@ header .bg-wrapper .upper-part .menu .navigation > ul > li .menu-dropdown {
   list-style: none;
   color: #000;
   background-color: #ffffff;
-  transition: 0.3s;
+  transition: height 0.3s;
   height: 0;
   width: 100%;
   position: absolute;
@@ -129,9 +132,13 @@ header .bg-wrapper .upper-part .menu .navigation > ul > li .menu-dropdown ul {
   padding: 1rem;
 }
 header .bg-wrapper .upper-part .menu .navigation > ul > li .menu-dropdown ul a {
-  color: #333;
+  color: #000a;
   font-size: clamp(16px, 1.5vw, 1.8rem);
   text-decoration: none;
+  transition: color 0.2s;
+}
+header .bg-wrapper .upper-part .menu .navigation > ul > li .menu-dropdown ul a:hover {
+  color: #000;
 }
 header .bg-wrapper .upper-part .menu .navigation > ul > li:hover {
   cursor: pointer;
@@ -147,6 +154,9 @@ header .bg-wrapper .upper-part .menu .navigation > ul > li:hover .dropdown-two {
 }
 header .bg-wrapper .upper-part .menu .navigation > ul > li:hover .dropdown-three {
   height: 9rem;
+}
+header .bg-wrapper .upper-part .menu .navigation > ul > li:hover a {
+  opacity: 1;
 }
 header .bg-wrapper .upper-part .menu .navigation > ul > li:hover a::after {
   transform: rotate(180deg);
@@ -165,7 +175,8 @@ header .bg-wrapper .title {
   max-width: 1440px;
   text-align: center;
   margin: 0 auto;
-  padding: 20rem 0;
+  padding: 20rem 200rem;
+  background-color: red;
   font-size: 3rem;
 }
 header .bg-wrapper .title h5 {
