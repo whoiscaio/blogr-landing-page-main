@@ -59,6 +59,10 @@ section.future {
         padding: 0 5rem 0;
       }
 
+      .paragraph:nth-child(1) {
+        margin-bottom: 4rem;
+      }
+
       .image {
         width: min(800px, 90%);
         order: -1;

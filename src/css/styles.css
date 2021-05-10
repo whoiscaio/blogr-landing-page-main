@@ -356,6 +356,9 @@ section.future .content .image img {
   section.future .content .paragraph {
     padding: 0 5rem 0;
   }
+  section.future .content .paragraph:nth-child(1) {
+    margin-bottom: 4rem;
+  }
   section.future .content .image {
     width: min(800px, 90%);
     order: -1;
