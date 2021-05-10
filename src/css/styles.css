@@ -6,6 +6,11 @@
   font-family: "Ubuntu", sans-serif;
   font-size: 62.5%;
 }
+@media (min-width: 1800px) {
+  :root {
+    font-size: 67.5%;
+  }
+}
 @media (max-width: 1400px) {
   :root {
     font-size: 55%;
@@ -56,8 +61,8 @@ button {
   background: #ff7a85;
 }
 
-main {
-  height: 500rem;
+main h1, main h2, main h3, main h4, main h5 {
+  color: #1f3f5b;
 }
 
 header {
@@ -299,6 +304,69 @@ header .bg-wrapper .title .title-buttons button:nth-child(2):hover {
 }
 .menuActive header .bg-wrapper .upper-part .menu {
   display: flex;
+}
+
+section.future {
+  padding: 5rem 0 5rem;
+  overflow: hidden;
+}
+section.future .title h1 {
+  font-size: 3.6rem;
+  margin: 5rem 0;
+  text-align: center;
+}
+section.future .content {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "text-one image" "text-two image";
+}
+section.future .content .paragraph {
+  padding: 0 5rem 0 clamp(10rem, 12vw, 15rem);
+}
+section.future .content .paragraph h3 {
+  font-size: 3.2rem;
+  margin: 2.4rem 0;
+}
+section.future .content .paragraph p {
+  font-size: 1.8rem;
+  color: #4b5862;
+  line-height: 3rem;
+}
+section.future .content .paragraph:first-child {
+  grid-area: text-one;
+}
+section.future .content .paragraph:last-child {
+  grid-area: text-two;
+}
+section.future .content .image {
+  grid-area: image;
+}
+section.future .content .image img {
+  height: max(45vw, 60rem);
+  transform: translateX(20rem);
+  margin-top: clamp(-14rem, -6vw, -5rem);
+}
+@media (max-width: 1200px) {
+  section.future .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  section.future .content .paragraph {
+    padding: 0 5rem 0;
+  }
+  section.future .content .image {
+    width: min(800px, 90%);
+    order: -1;
+    margin: 0 auto;
+    padding: 8rem 0 6rem;
+  }
+  section.future .content .image img {
+    width: 100%;
+    height: auto;
+    transform: none;
+  }
 }
 
 @keyframes menuout {

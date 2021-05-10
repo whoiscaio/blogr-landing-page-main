@@ -26,6 +26,10 @@ $very-dark-desaturated-blue: #3f4164;
   font-family: 'Ubuntu', sans-serif;
   font-size: 62.5%;
 
+  @media (min-width: 1800px) {
+    font-size: 67.5%;
+  }
+
   @media (max-width: 1400px) {
     font-size: 55%;
   }
@@ -76,5 +80,7 @@ button {
 }
 
 main {
-  height: 500rem;
+  h1, h2, h3, h4, h5 {
+    color: $very-dark-blue;
+  }
 }
