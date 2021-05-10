@@ -234,6 +234,7 @@ header .bg-wrapper .upper-part .mobile-menu-icon {
   }
   header .bg-wrapper .upper-part .menu .navigation > ul > li:hover a {
     text-decoration: none;
+    color: #3f4164;
   }
   header .bg-wrapper .upper-part .menu .navigation > ul > li:hover .dropdown-one {
     height: 24rem;
