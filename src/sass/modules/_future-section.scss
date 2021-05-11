@@ -46,7 +46,7 @@ section.future {
       img {
         height: max(45vw, 60rem);
         transform: translateX(20rem);
-        margin-top: clamp(-14rem, -6vw, -5rem)
+        margin-top: clamp(-14rem, -6vw, -5rem);
       }
     }
 
@@ -54,6 +54,7 @@ section.future {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      padding-bottom: 8rem;
 
       .paragraph {
         padding: 0 5rem 0;
