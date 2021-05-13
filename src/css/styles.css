@@ -479,7 +479,7 @@ section.infrastructure .bg-wrapper .bg {
 }
 
 section.info {
-  padding: 10rem 0;
+  padding: 8rem 0 6rem;
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
