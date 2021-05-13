@@ -79,6 +79,28 @@ button {
   }
 }
 
+.paragraph {
+
+  h3 {
+    font-size: 3.2rem;
+    margin: 2.4rem 0;
+  }
+
+  p {
+    font-size: 1.8rem;
+    color: $very-dark-grayish-blue;
+    line-height: 3rem;
+  }
+
+  &:first-child {
+    grid-area: text-one;
+  }
+
+  &:last-child {
+    grid-area: text-two;
+  }
+}
+
 main {
   h1, h2, h3, h4, h5 {
     color: $very-dark-blue;

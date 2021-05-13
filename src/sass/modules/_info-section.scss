@@ -1,0 +1,53 @@
+section.info {
+  padding: 10rem 0;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    'image text-one'
+    'image text-two';
+
+  .image {
+    grid-area: image;
+
+    img {
+      height: max(40vw, 60rem);
+      margin-left: -20rem;
+    }
+  }
+
+  .paragraph {
+    padding-right: clamp(8rem, 10vw, 18rem);;
+  }
+
+  @media (max-width: 1000px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .image {
+      position: initial;
+      width: min(90rem, 90%);
+
+      img {
+        height: initial;
+        width: 100%;
+        position: initial;
+        transform: translateY(0);
+        margin-left: 0;
+        src: url("../assets/illustration-laptop-mobile.svg");
+      }
+    }
+
+    .paragraph {
+      width: min(90rem, 90%);
+      padding: 0 5rem;
+
+      &:last-child {
+        margin-top: 4rem;
+      }
+    }
+  }
+}

@@ -6,6 +6,10 @@ section.future {
     font-size: 3.6rem;
     margin: 5rem 0;
     text-align: center;
+
+    @media (max-width: 1000px) {
+      margin-bottom: 0;
+    }
   }
 
   .content {
@@ -15,30 +19,6 @@ section.future {
     grid-template-areas:
       "text-one image"
       "text-two image";
-
-    .paragraph {
-      
-      padding: 0 5rem 0 clamp(10rem, 12vw, 15rem);
-
-      h3 {
-        font-size: 3.2rem;
-        margin: 2.4rem 0;
-      }
-
-      p {
-        font-size: 1.8rem;
-        color: $very-dark-grayish-blue;
-        line-height: 3rem;
-      }
-    }
-
-    .paragraph:first-child {
-      grid-area: text-one;
-    }
-
-    .paragraph:last-child {
-      grid-area: text-two;
-    }
 
     .image {
       grid-area: image;
@@ -50,7 +30,24 @@ section.future {
       }
     }
 
+    .paragraph {
+      padding: 0 5rem 0 min(8vw, 15rem);
+    }
+
     @media (max-width: 1200px) {
+      .image {
+        position: relative;
+        
+        img {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          margin-top: 0;
+        }
+      }
+    }
+
+    @media (max-width: 800px) {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -68,12 +65,14 @@ section.future {
         width: min(800px, 90%);
         order: -1;
         margin: 0 auto;
-        padding: 8rem 0 6rem;
+        padding: 4rem 0;
+        position: initial;
         
         img {
           width: 100%;
           height: auto;
           transform: none;
+          position: initial;
         }
       }
     }

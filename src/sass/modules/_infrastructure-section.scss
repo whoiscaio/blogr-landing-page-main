@@ -17,7 +17,7 @@ section.infrastructure {
     position: relative;
 
     img {
-      height: max(45vw, 60rem);
+      height: max(45vw, 40rem);
       position: absolute;
       margin-top: -15%;
     }
@@ -27,7 +27,7 @@ section.infrastructure {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: clamp(6rem, 10vw, 18rem) max(10rem, 1vw);
+    padding: clamp(6rem, 10vw, 18rem) max(6rem, 1vw);
     flex: 1;
 
     color: $white;
@@ -75,7 +75,7 @@ section.infrastructure {
     }
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 800px) {
     flex-direction: column;
     text-align: center;
     padding-bottom: 5rem;
@@ -88,6 +88,7 @@ section.infrastructure {
         width: min(100%, 70rem);
         height: auto;
         position: initial;
+        margin-top: -10%;
       }
     }
 
