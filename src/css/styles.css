@@ -523,6 +523,32 @@ section.info .paragraph {
   }
 }
 
+footer {
+  background: #25252d;
+  color: #c8c8cb;
+  display: flex;
+  justify-content: space-evenly;
+  border-top-right-radius: 15rem;
+  padding: 8rem 0;
+}
+footer .logo img {
+  transform: translateY(-50%);
+}
+footer .part h5 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+footer .part ul li {
+  margin: 1.2rem 0;
+}
+footer .part ul li a {
+  color: inherit;
+  font-size: 1.4rem;
+}
+footer .part ul li a:hover {
+  text-decoration: underline;
+}
+
 @keyframes menuout {
   from {
     margin-top: 0;

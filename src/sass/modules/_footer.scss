@@ -1,0 +1,39 @@
+footer {
+  background: $very-dark-black-blue;
+  color: $grayish-blue;
+
+  display: flex;
+  justify-content: space-evenly;
+
+  border-top-right-radius: 15rem;
+  padding: 8rem 0;
+
+  .logo {
+    
+    img {
+      transform: translateY(-50%);
+    }
+  }
+
+  .part {
+    h5 {
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+    }
+
+    ul {
+
+      li {
+        margin: 1.2rem 0;
+        a {
+          color: inherit;
+          font-size: 1.4rem;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
