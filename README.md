@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github Repository](https://github.com/whoiscaio/blogr-landing-page-main)
-- Live Site URL: [Add live site URL here](https://whoiscaio.github.io/blogr-landing-page-main/)
+- Live Site URL: [Github Pages](https://whoiscaio.github.io/blogr-landing-page-main/)
 
 ## My process
 
