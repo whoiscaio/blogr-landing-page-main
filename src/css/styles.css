@@ -544,9 +544,35 @@ footer .part ul li {
 footer .part ul li a {
   color: inherit;
   font-size: 1.4rem;
+  font-weight: 400;
 }
 footer .part ul li a:hover {
   text-decoration: underline;
+}
+@media (max-width: 600px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 4rem 0;
+  }
+  footer .logo {
+    margin: 0 0 2rem;
+  }
+  footer .logo img {
+    transform: translateY(0);
+  }
+  footer .part {
+    margin-bottom: 3rem;
+  }
+  footer .part h5 {
+    font-size: 2rem;
+  }
+  footer .part ul li a {
+    font-size: 1.8rem;
+  }
+  footer .part:last-child {
+    margin-bottom: 0;
+  }
 }
 
 @keyframes menuout {
