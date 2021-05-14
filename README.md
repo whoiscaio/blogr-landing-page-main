@@ -43,7 +43,7 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@whoiscaio](https://www.frontendmentor.io/profile/whoiscaio)
 - Github - [whoiscaio](https://github.com/whoiscaio)
 - Linkedin - [Caio Lima](https://www.linkedin.com/in/lima-caio/)
 
