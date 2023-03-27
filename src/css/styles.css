@@ -161,7 +161,7 @@ header .bg-wrapper .upper-part .menu .navigation > ul > li .menu-dropdown ul {
   padding: 1rem;
 }
 header .bg-wrapper .upper-part .menu .navigation > ul > li .menu-dropdown ul a {
-  color: #000a;
+  color: rgba(0, 0, 0, 0.6666666667);
   font-size: clamp(16px, 1.5vw, 1.8rem);
   text-decoration: none;
   transition: color 0.2s;
@@ -242,7 +242,7 @@ header .bg-wrapper .upper-part .mobile-menu-icon {
   }
   header .bg-wrapper .upper-part .menu .navigation > ul > li .menu-dropdown {
     width: 90%;
-    background: #0002;
+    background: rgba(0, 0, 0, 0.1333333333);
     border-radius: 0.6rem;
     z-index: 200;
     position: initial;
@@ -271,7 +271,7 @@ header .bg-wrapper .upper-part .mobile-menu-icon {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-top: 1px solid #0002;
+    border-top: 1px solid rgba(0, 0, 0, 0.1333333333);
     padding: 2rem 0;
   }
   header .bg-wrapper .upper-part .menu .menu-buttons button:nth-child(1) {
@@ -306,6 +306,7 @@ header .bg-wrapper .title h5 {
 }
 header .bg-wrapper .title .title-buttons button {
   font-size: 1.8rem;
+  margin-bottom: 1rem;
 }
 header .bg-wrapper .title .title-buttons button:nth-child(2) {
   border: 1px solid #ffffff;
@@ -472,7 +473,6 @@ section.infrastructure .bg-wrapper .bg {
   }
   section.infrastructure .texts {
     flex: initial;
-    width: max(80vw, 50rem);
     padding: 0 5rem;
     margin: 0 auto;
   }
