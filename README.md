@@ -1,7 +1,7 @@
 
 # Blogr Landing Page
 
-Landing page comercial construída para uma suposta plataforma destinada à pessoas que desejam publicar e ampliar a sua marca online.
+Landing page comercial construída para uma plataforma destinada à pessoas que desejam publicar e ampliar a sua marca online.
 
 O propósito da aplicação é exclusivamente exibir o produto e atrair a atenção do público para o mesmo, despertando o interesse para a sua utilidade como uma plataforma de alavancamento digital.
 
@@ -39,4 +39,6 @@ Uma vez clonado o projeto, por se tratar de algo construído apenas com HTML, CS
 ### Licença
 
 [MIT](https://choosealicense.com/licenses/mit/)
+
+* Projeto fictício
 
