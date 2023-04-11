@@ -1,52 +1,42 @@
-# Frontend Mentor - Blogr landing page solution
 
-This is a solution to the [Blogr landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP).
+# Blogr Landing Page
 
-## Table of contents
+O projeto se trata de uma landing page comercial construída para uma suposta plataforma destinada à pessoas que desejam publicar e ampliar a sua marca online.
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+O propósito da aplicação é exclusivamente exibir o produto e atrair a atenção do público para o mesmo, despertando o interesse para a sua utilidade como uma plataforma de alavancamento digital.
 
-## Overview
+## Índice
 
-### The challenge
+- [Screenshots](#screenshots)
+- [Links](#links)
+- [Para desenvolvedores](#para-desenvolvedores)
+  - [Rodando localmente](#rodando-localmente)
+  - [Licença](#licença)
+### Screenshots
 
-Users should be able to:
-
-- View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
-
-### Screenshot
-
-![](./utils/screenshot.png)
+<div>
+  <img src="./utils/blogr_1.png" width="500" />
+  <img src="./utils/blogr_2.png" width="500" />
+</div>
 
 ### Links
 
-- Solution URL: [Github Repository](https://github.com/whoiscaio/blogr-landing-page-main)
-- Live Site URL: [Github Pages](https://whoiscaio.github.io/blogr-landing-page-main/)
+Visualize a página através desse [link](https://whoiscaio.github.io/blogr-landing-page-main/).
 
-## My process
 
-### Built with
+## Para desenvolvedores
 
-- Semantic HTML5 markup
-- [Sass](https://sass-lang.com/) - Sass Website
-- Flexbox
-- CSS Grid
-- Javascript
+### Rodando localmente
 
-## Author
+Clone o projeto
 
-- Frontend Mentor - [@whoiscaio](https://www.frontendmentor.io/profile/whoiscaio)
-- Github - [whoiscaio](https://github.com/whoiscaio)
-- Linkedin - [Caio Lima](https://www.linkedin.com/in/lima-caio/)
+```bash
+  git clone https://github.com/whoiscaio/blogr-landing-page-main
+```
 
-## Acknowledgments
+Uma vez clonado o projeto, por se tratar de algo construído apenas com HTML, CSS e JS puro, basta executar o arquivo index.html no seu navegador.
 
-This project was very important to consolidate my understanding of CSS Grid, Flexbox and was my very first project made with Sass, i'm very proud of it, even though i didn't used most of the things Sass provide to us.
+### Licença
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
