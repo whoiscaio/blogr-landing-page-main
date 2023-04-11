@@ -15,8 +15,8 @@ O propósito da aplicação é exclusivamente exibir o produto e atrair a atenç
 ### Screenshots
 
 <div>
-  <img src="./utils/blogr_1.png" width="500" />
-  <img src="./utils/blogr_2.png" width="500" />
+  <img src="./utils/blogr_1.png" width="400" />
+  <img src="./utils/blogr_2.png" width="400" />
 </div>
 
 ### Links
