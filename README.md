@@ -1,17 +1,21 @@
 
 # Blogr Landing Page
 
-Landing page comercial construída para uma plataforma destinada à pessoas que desejam publicar e ampliar a sua marca online.
-
-O propósito da aplicação é exclusivamente exibir o produto e atrair a atenção do público para o mesmo, despertando o interesse para a sua utilidade como uma plataforma de alavancamento digital.
-
 ## Índice
 
+- [Sobre](#sobre)
 - [Screenshots](#screenshots)
 - [Links](#links)
 - [Para desenvolvedores](#para-desenvolvedores)
   - [Rodando localmente](#rodando-localmente)
   - [Licença](#licença)
+
+### Sobre
+
+Landing page comercial construída para uma plataforma destinada à pessoas que desejam publicar e ampliar a sua marca online.
+
+O propósito da aplicação é exclusivamente exibir o produto e atrair a atenção do público para o mesmo, despertando o interesse para a sua utilidade como uma plataforma de alavancamento digital.
+
 ### Screenshots
 
 <div>
